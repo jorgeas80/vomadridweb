@@ -1,0 +1,18 @@
+
+<input type="text" [(ngModel)]="name">
+<h1>
+  {{title}}
+</h1>
+<h2>
+  Hello, {{ name }}!
+</h2>
+<img [src]="imgUrl"/>
+<button (click)="setName('Jorge')">Saludo</button>
+
+<button (click)="load()">Load</button>
+
+<div>
+  <ul>
+    <li *ngFor="let m of movies">{{ m }}</li>
+  </ul>
+</div>
