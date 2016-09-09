@@ -1,14 +1,12 @@
-/**
- * Created by jorge on 30/08/16.
- */
-import {Injectable} from '@angular/core';
+import { Injectable } from '@angular/core';
 import {Http, Response} from '@angular/http';
 import 'rxjs/Rx';
 import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class VOMadridAPIService {
-  constructor(private http: Http) {}
+
+  constructor(private http: Http) { }
 
   getData() {
     // TODO: This should be a configuration parameter
@@ -22,4 +20,5 @@ export class VOMadridAPIService {
   private parseData(response: Response) {
     return response.json().map( movie => movie.movie_title)
   }
+
 }
