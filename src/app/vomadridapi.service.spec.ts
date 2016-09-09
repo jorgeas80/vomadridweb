@@ -1,16 +1,16 @@
 /* tslint:disable:no-unused-variable */
 
 import { addProviders, async, inject } from '@angular/core/testing';
-import { VomadridapiService } from './vomadridapi.service';
+import { VOMadridAPIService } from './vomadridapi.service';
 
 describe('Service: Vomadridapi', () => {
   beforeEach(() => {
-    addProviders([VomadridapiService]);
+    addProviders([VOMadridAPIService]);
   });
 
   it('should ...',
-    inject([VomadridapiService],
-      (service: VomadridapiService) => {
+    inject([VOMadridAPIService],
+      (service: VOMadridAPIService) => {
         expect(service).toBeTruthy();
       }));
 });
