@@ -15,14 +15,22 @@
 *.launch
 .settings/
 
+# testing
+coverage
+
+# production
+build
+
 # misc
 /.sass-cache
 /connect.lock
 /coverage/*
 /libpeerconnection.log
-npm-debug.log
+npm-debug.log*
 testem.log
 /typings
+.DS_Store
+.env
 
 # e2e
 /e2e/*.js
